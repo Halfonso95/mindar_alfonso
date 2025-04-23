@@ -3,15 +3,7 @@
  <head>
     <title>room3</title>
    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-   <script>
-    AFRAME.registerComponent("mylink", {
-    init: function() {  
-     this.el.addEventListener("click", (e) => {              
-        window.location = this.data.href;      
-       })
-    }
-  })
-</script>
+   <script src="https://castelletm12b.cat/build/assets/question.js" defer></script>
  </head>
  <body>
     <a-scene cursor= "rayOrigin: mouse">
@@ -35,9 +27,9 @@
         </a-entity>    
    </a-assets>  
      <a-sky src="#aulainformatica"></a-sky>
-      <a-entity gltf-model="#projector" position="-5 -3 -10" scale="0.05 0.05 0.05"></a-entity>
-      <a-entity gltf-model="#amagall" position="-370 30 -100" rotation="0 90 0" scale="0.7 0.7 0.7"></a-entity>
-      <a-plane position="1.1 0 2" rotation="0 -180 0" src="#imgaltremon" transparent="true" mylink="href: room1.html ;"></a-plane>
+      <a-entity question="96" gltf-model="#projector" position="-5 -3 -10" scale="0.05 0.05 0.05"></a-entity>
+      <a-entity question="97" gltf-model="#amagall" position="-370 30 -100" rotation="0 90 0" scale="0.7 0.7 0.7"></a-entity>
+      <a-plane question="95" position="1.1 0 2" rotation="0 -180 0" src="#imgaltremon" transparent="true" mylink="href: room1.html ;"></a-plane>
    </a-scene>
  </body>
 </html>
