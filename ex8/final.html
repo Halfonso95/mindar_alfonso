@@ -41,11 +41,6 @@
   <h1>Enhorabona, has escapat dels professors sectaris</h1>
   <canvas id="canvas"></canvas>
 
-  <audio id="victorySound" autoplay>
-    <source src="victory.mp3" type="audio/mpeg">
-    El teu navegador no suporta àudio.
-  </audio>
-
   <script>
     const canvas = document.getElementById("canvas");
     const ctx = canvas.getContext("2d");
@@ -141,13 +136,6 @@
       H = window.innerHeight;
       canvas.width = W;
       canvas.height = H;
-    });
-
-    window.addEventListener("click", () => {
-      const audio = document.getElementById("victorySound");
-      if (audio.paused) {
-        audio.play();
-      }
     });
   </script>
 </body>
